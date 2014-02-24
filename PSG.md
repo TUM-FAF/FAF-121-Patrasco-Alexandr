@@ -4,7 +4,7 @@ This guideline is based on [Geotechnical Software Services C++ Programming Style
 
 ###Naming Conventions###
 
-In my projects I will be using CamelCase. Variables will be named starting with lowercase letter, whereas functions starting with uppercase. Variables should have meaningful names, short names like `i, j, k` are only allowed for variables with small scope or structures like `PAINTSTRUCT ps; RECT rct;`.
+In my projects I will be using CamelCase. Variables will be named starting with lowercase letter, whereas functions starting with uppercase. Variables should have meaningful names, short names like `i, j, k` are only allowed for variables with small scope or structures like `PAINTSTRUCT ps; RECT rct;`. I won't use Hungarian notation, except for handles, such as `HFONT hFont` and others.
 
 * `variable` --- camelCase
 * `function` --- CamelCase
@@ -15,6 +15,7 @@ In my projects I will be using CamelCase. Variables will be named starting with 
 * indent with tabs of size 4
 * Use Allman indentation style
 * This is acceptable:
+
 `if(condition){//one short statement}`
 * If list of parameters is very long I will break it into several lines, each line starting one space to the right of opening bracket. Moreover, I will leave free space before and after such functions.
 
