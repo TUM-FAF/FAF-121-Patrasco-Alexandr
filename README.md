@@ -7,7 +7,7 @@ Laboratories Repository
 
 * **Group:** FAF-121
 
-* **GitHub nickname:** alexpatrasco
+* **GitHub nickname:** [alexpatrasco](https://github.com/AlexPatrasco)
 
 ##Contained Courses##
 
