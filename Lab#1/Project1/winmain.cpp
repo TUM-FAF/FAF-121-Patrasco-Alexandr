@@ -9,6 +9,7 @@
 #define BUTTON_DEFAULT 5
 #define BUTTON_CUSTOM 6
 
+
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
@@ -35,12 +36,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		MessageBox(NULL, TEXT("This program requires Win NT"), szAppName, MB_ICONERROR);
 		return 0;
 	}
-
-	
+		
 
 	hWnd = CreateWindow(szAppName, TEXT("WP \"Red\" 1"), WS_OVERLAPPEDWINDOW,
-						600, 400, 640, 200,
-						NULL, NULL, hInstance, NULL);
+						600, 400, 640, 200, NULL, NULL, hInstance, NULL);
 
 	ShowWindow(hWnd, iCmdShow);
 	UpdateWindow(hWnd);
@@ -133,14 +132,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			HBRUSH hBrush;
 
 			hDC = BeginPaint(hWnd, &ps);
+
 			GetClientRect(hWnd, &rct);
 			hBrush = CreateSolidBrush(RGB(red, green, blue));
 			FillRect(hDC, &rct, hBrush);
 
 			EndPaint(hWnd, &ps);
 		}
-		break;
-		
+		break;		
 
 
 
@@ -160,6 +159,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 						InvalidateRect(NULL, NULL, NULL);
 					}					
 					break;
+
 
 				case BUTTON_CUSTOM:
 					DestroyWindow(hWnd);
@@ -186,6 +186,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 						SetWindowText(GetDlgItem(hWnd, STATIC_DEFAULT), text);
 					}
 					break;
+
 
 				case EDIT_CUSTOM:
 					{
