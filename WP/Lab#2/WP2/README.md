@@ -3,7 +3,8 @@
 The purpose of this laboratory work was for us to learn how to use scrollbars, listboxes, system menus, hotkeys and dialog boxes.
 
 ##Features##
-[App window]()
+![App window](https://raw.github.com/TUM-FAF/FAF-121-Patrasco-Alexandr/master/WP/Lab%232/WP2/Screenshots/Screen1.png)
+![About Box](https://raw.github.com/TUM-FAF/FAF-121-Patrasco-Alexandr/master/WP/Lab%232/WP2/Screenshots/AboutBox.png)
 
 In this app I have created one text field, 2 horizontal scrollbars (upper to change intensity of the color of the text field, lower to change width of the window), one vertical scrollbar for adjusting heigth, a listbox with possibility of choosing a font and a system menu. The menu has two submenus, first (File) includes options Move (move window to a random position) and Quit(exit), the second one provides option About, which leads to a dialog box. Moreover, I included vertical and horizontal scrollbars for adjusting position of visible region of the app as well as I binded two hotkeys: ALT+C(maximize window & change color of background randomly) and CTRL+X(quit).
 
