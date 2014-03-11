@@ -1,5 +1,8 @@
 #include <windows.h>
 #include <stdlib.h>
+#include <iostream>
+
+using namespace std;
 
 
 #define STATIC_DEFAULT 1
@@ -156,7 +159,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 						green = rand() % 256;
 						blue = rand() % 256;
 
-						InvalidateRect(NULL, NULL, NULL);
+						InvalidateRect(hWnd, NULL, NULL);
 					}					
 					break;
 
@@ -275,29 +278,17 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 				if(childWindowPositionFlag == 0)
 				{
-					ShowWindow(hWnd, SW_SHOWMAXIMIZED);
-					SetWindowPos(GetDlgItem(hWnd, STATIC_DEFAULT), HWND_TOP, x, y, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, BUTTON_DEFAULT), HWND_TOP, x, y + 40, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, EDIT_DEFAULT), HWND_TOP, x, y + 100, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, STATIC_CUSTOM), HWND_TOP, x*1.75 + 170, y, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, BUTTON_CUSTOM), HWND_TOP, x*1.75 + 170, y + 40, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, EDIT_CUSTOM), HWND_TOP, x*1.75 + 170, y + 100, 0, 0, SWP_NOSIZE);
 					childWindowPositionFlag = 1;
+					ShowWindow(hWnd, SW_SHOWMAXIMIZED);					
 
 				}
 				else
 				{
-					ShowWindow(hWnd, SW_SHOWMAXIMIZED);
-					SetWindowPos(GetDlgItem(hWnd, STATIC_CUSTOM), HWND_TOP, x, y, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, BUTTON_CUSTOM), HWND_TOP, x, y + 40, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, EDIT_CUSTOM), HWND_TOP, x, y + 100, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, STATIC_DEFAULT), HWND_TOP, x*1.75 + 170, y, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, BUTTON_DEFAULT), HWND_TOP, x*1.75 + 170, y + 40, 0, 0, SWP_NOSIZE);
-					SetWindowPos(GetDlgItem(hWnd, EDIT_DEFAULT), HWND_TOP, x*1.75 + 170, y + 100, 0, 0, SWP_NOSIZE);
 					childWindowPositionFlag = 0;
-
+					ShowWindow(hWnd, SW_SHOWMAXIMIZED);
+					
 				}
-				InvalidateRect(NULL, NULL, NULL);
+				InvalidateRect(hWnd, NULL, NULL);
 							
 			}
 			break;
