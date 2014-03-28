@@ -16,13 +16,13 @@ For this one, first of all I had to do `mkdir AlexPatrasco` - creating a new fol
 - Create a file in repository folder, write in your name, save it and commit it
 
 For this task, I've run
-`touch file.txt` create file.txt
-`vim file.txt` open it in vim
-`i` enter insert mode
-`ESC` exit from insert mode
-`:wq` save and exit file.txt
-`git add file.txt` track file.txt
-`git commit -m "message"` commit
+-`touch file.txt` create file.txt
+-`vim file.txt` open it in vim
+-`i` enter insert mode
+-`ESC` exit from insert mode
+-`:wq` save and exit file.txt
+-`git add file.txt` track file.txt
+-`git commit -m "message"` commit
 
 ### Tasks With Points:
   - Connect to server using public key (1 pt)
@@ -44,9 +44,9 @@ Here I used `git reflog` and copied id of the coomit I wanted to restore then us
   - Create a VCS hook (1 pt)
 First, I had to access `~/.git/hooks` then I did `touch post-commit`
 and `vim post-commit` and adding
-`#!bin/sh`
-`echo "wow, much message, very commit" >&2`
-`exit 1`, save and quit and then in the same folder `chmod -x post-commit` to apply it. This hook will show a message after every commit.
+-`#!bin/sh`
+-`echo "wow, much message, very commit" >&2`
+-`exit 1`, save and quit and then in the same folder `chmod -x post-commit` to apply it. This hook will show a message after every commit.
   - Make your CLI text editor to highlight code (1 pt)
 Since Vim has a built-in syntax highlighter it was just a matter of finding command, moreover it's turned on by default, but can be switched by using `:sy[ntax] on/off`.
   - Create a VCS alias (1 pt)
@@ -55,9 +55,9 @@ Since Vim has a built-in syntax highlighter it was just a matter of finding comm
   - Create your own server (ex. virtual machine) (2 pt)
 For this task I had to use a virtual machine with Ubuntu.
 In ubuntu i ran several commands:
-`sudo apt-get install openssh-server`
-`sudo service ssh start`
-`ifconfig`. 
+-`sudo apt-get install openssh-server`
+-`sudo service ssh start`
+-`ifconfig`. 
 The first one installs OpenSSH, the second is for starting the server and the third is for getting the ip.
 Then on Windows I ran GitBash and typed in `ssh ubuntu_login@ip` and been able to connect to the server using Ubuntu login and password.
 
