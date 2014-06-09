@@ -114,6 +114,7 @@
     <Resource Include="Resources\fire.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\deathstar.png" />
     <Content Include="Resources\imperial.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

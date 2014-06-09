@@ -82,5 +82,6 @@
         </Label>
         <Slider HorizontalAlignment="Left" Margin="126,483,0,0" VerticalAlignment="Top" Width="20" Orientation="Vertical" Height="157" SmallChange="1"/>
         <Button Content="Add SWAG!" HorizontalAlignment="Left" Margin="115,37,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Image Source="Resources/deathstar.png" HorizontalAlignment="Left" Height="149" Margin="602,188,0,0" VerticalAlignment="Top" Width="170" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
