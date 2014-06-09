@@ -66,7 +66,7 @@
         <RadioButton Content="Ion Gun" HorizontalAlignment="Left" Margin="617,474,0,0" VerticalAlignment="Top" GroupName="weapons" Grid.ColumnSpan="2" Height="16" Width="62" Background="#FF35D617"/>
         <Button Content="Use Cloak" HorizontalAlignment="Left" Margin="164,621,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Height="19"/>
         <Button Content="HyperJump" HorizontalAlignment="Left" Margin="376,621,0,0" VerticalAlignment="Top" Width="94" Height="23" Grid.Column="1"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="439,616,0,0" VerticalAlignment="Top" Width="75" Height="28">
+        <Button Content="" HorizontalAlignment="Left" Margin="439,604,0,0" VerticalAlignment="Top" Width="75" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" ClickMode="Press" Click="Button_Click_2">
             <Button.Background>
                 <ImageBrush ImageSource="Resources/fire.png" Stretch="Uniform"/>
             </Button.Background>

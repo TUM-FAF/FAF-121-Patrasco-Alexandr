@@ -62,6 +62,13 @@ namespace Simulatron
             //Play Sound On Click
             simpleSound.Play();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.progBar1.Value = 0;
+            this.progBar2.Value = 0;
+            this.progBar3.Value = 0;
+        }
         
         
     }
