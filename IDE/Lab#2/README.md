@@ -24,8 +24,11 @@ In my application I used several types of WPF controls, such as:
   - Create a _Reset_ button. On clicking this button all controls should go to their default state (1pt) (Reset Chargers)
   - Set a breakpoint in your application and check variables values at that moment of time (1pt)
   - _Mention your own tasks that you did and claim points for them (max of 5 pt in total)_(1) Used sound 2)Created design from a scratch 3)Used gifs )
+
 ###Functionality###
+
 [The App](http://i.imgur.com/i2vjwTq.png)
+
 Progress bars use timer to charge.
 When the button "Add SWAG!" is pressed it plays a sound.
 Fire button resets chargers of Weapons.
