@@ -47,13 +47,7 @@ namespace Simulatron
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.timer = new DispatcherTimer();
-            this.timer.Tick += timer_Tick;
-            this.timer.Interval = new System.TimeSpan(0, 0, 1);
-            this.timer.Start();
-        }
+      
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
