@@ -27,7 +27,7 @@ In my application I used several types of WPF controls, such as:
 
 ###Functionality###
 
-[The App](http://i.imgur.com/i2vjwTq.png)
+![The App](http://i.imgur.com/i2vjwTq.png)
 
 Progress bars use timer to charge.
 When the button "Add SWAG!" is pressed it plays a sound.
