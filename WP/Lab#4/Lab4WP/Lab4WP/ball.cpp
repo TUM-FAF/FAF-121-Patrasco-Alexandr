@@ -50,10 +50,16 @@ bool checkBallCollision(Ball b1, Ball b2)
 	float dist;
 	POINT accumVel;
 
-	dist = sqrt(pow(b1.center.x - b2.center.x, 2) + pow(b1.center.y - b2.center.y, 2));
+	dist = sqrt(pow((b1.center.x - b2.center.x), 2) + pow((b1.center.y - b2.center.y), 2));
 
-	if(dist < 105)
+	if(dist <= 100)
 	{
+		b1.xVel = -abs(b1.xVel);
+		b1.yVel = -abs(b1.yVel);
+
+		b2.xVel = -abs(b2.xVel);
+		b2.yVel = -abs(b2.yVel);
+
 		accumVel.x = (abs(b1.xVel) + abs(b2.xVel)) / 2;
 		accumVel.y = (abs(b1.yVel) + abs(b2.yVel)) / 2;
 
